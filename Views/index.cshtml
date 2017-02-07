@@ -1,0 +1,16 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8">
+    <title>Parcels</title>
+    <link rel='stylesheet' href='https://maxcdn.bootstrapcdn.com/bootstrap/3.2.0/css/bootstrap.min.css'>
+  </head>
+  <body>
+    <h1>Estimate the price of your shipping</h1>
+    <p>height: @Model.GetHeight()</p>
+    <p>weight: @Model.GetWeight()</p>
+    <p>width: @Model.GetWidth()</p>
+    <p>volume: @Model.CalculateVolume()</p>
+    <p>Estimated cost of shipping: @Model.CalculateCost()</p>
+  </body>
+</html>
